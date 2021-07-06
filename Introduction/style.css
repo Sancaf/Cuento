@@ -1,0 +1,82 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: rgb(0, 0, 0);
+	text-align: center;
+}
+
+@font-face {
+	font-family: 'Fuego';
+	src: url('fuego.otf');
+}
+
+h1 {
+	-webkit-user-select: none !important;
+	-moz-user-select: none !important;
+	-ms-user-select: none !important;
+	user-select: none !important;
+	color: rgb(00, 00, 00);
+	font-family: 'Fuego';
+	font-size: 65px;
+}
+
+.container {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#presentación {
+	font-family: 'Tinos', serif;
+	color: rgb(249, 243, 236);
+	margin-top: 22px;
+	margin-bottom: 22px;
+}
+
+.modal-content {
+	width: 400px;
+	border-color: rgb(249, 243, 236);
+	background-color: rgb(0, 0, 0);
+	margin-left: 50%;
+	margin-right: 50%;
+}
+
+.modal-correccion {
+	left: -200px;
+}
+
+button {
+	width: 398px;
+	display: inline-block;
+	padding: 0.46em 1.6em;
+	border: 0.1em solid #000000;
+	margin: 0 0.2em 0.2em 0;
+	border-radius: 0.52em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color: rgb(179, 30, 26);
+	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+	background-color: rgb(5, 16, 32);
+	text-align: center;
+	transition: all 0.15s;
+}
+button:hover {
+	border-radius: 0em;
+	text-shadow: 0 0 2em rgba(249, 243, 236, 1);
+	font-weight: bolder;
+	color: rgb(249, 243, 236);
+	outline: none;
+}
+@media all and (max-width: 30em) {
+	button {
+		display: block;
+		margin: 0.4em auto;
+	}
+}
